@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme */
+.app-container.light {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+/* Dark Theme */
+.app-container.dark {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.todo-wrapper {
+  width: 100%;
+  max-width: 500px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.theme-toggle {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.theme-toggle button {
+  padding: 6px 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: inherit;
+}
+
+.add-task-section {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.add-task-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 4px;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: #000;
+}
+
+.stats-section {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-text {
+  font-size: 18px;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 1px solid #999;
+  background-color: #f0f0f0;
+  color: #000;
+  border-radius: 4px;
+}

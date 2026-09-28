@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Counter from './components/DemoState';
+import Counter1 from './components/DemoClass';
+import DemoRef from './components/DemoRef';
+import DemoMemo from './components/DemoMemo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter/>
+      <DemoRef/>
+      <DemoMemo/>
+      {/* <Counter1/> */}
     </div>
   );
 }
